@@ -5,12 +5,11 @@
       --text-dark: #2c3e50;
       --text-light: #7f8c8d;
       --bg-light: #f8f9fa;
-      --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      --gradient-primary: linear-gradient(90deg,rgba(255, 213, 0, 0.64) 39%, rgba(158, 144, 16, 0.78) 64%);
       --shadow-soft: 0 10px 30px rgba(0,0,0,0.1);
       --shadow-hover: 0 20px 40px rgba(0,0,0,0.15);
       --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    
+      --colormain: #ffd230;
     }
 
     * {
@@ -153,7 +152,7 @@
     }
 
     .hero-btn {
-      background: var(--gradient-secondary);
+      background: var(--primary-color);
       border: none;
       padding: 15px 40px;
       font-size: 1.1rem;
@@ -190,7 +189,7 @@
       transform: translateX(-50%);
       width: 60px;
       height: 4px;
-      background: var(--gradient-primary);
+      background: #dca890;
       border-radius: 2px;
     }
 
@@ -214,7 +213,7 @@
       left: 0;
       right: 0;
       height: 4px;
-      background: var(--gradient-primary);
+      background: var(--colormain);
       transform: scaleX(0);
       transition: transform 0.3s ease;
     }
@@ -230,7 +229,7 @@
 
     .service-icon {
       font-size: 3rem;
-      background: var(--gradient-primary);
+      background:  var(--colormain);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -279,7 +278,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: linear-gradient(135deg, rgba(44, 62, 80, 0.8), rgba(231, 76, 60, 0.8));
+      background: linear-gradient(135deg, rgba(255, 222, 7, 0.8), rgba(231, 222, 60, 0.8));
       display: flex;
       align-items: center;
       justify-content: center;
@@ -288,7 +287,7 @@
     }
 
     .portfolio-item:hover .portfolio-overlay {
-      opacity: 1;
+      opacity: 0.5;
     }
 
     .portfolio-overlay i {
@@ -357,7 +356,7 @@
     }
 
     .btn-primary {
-      background: var(--gradient-primary);
+      background: var(--primary-color);
       border: none;
       padding: 15px 40px;
       font-weight: 600;
@@ -368,11 +367,12 @@
     .btn-primary:hover {
       transform: translateY(-3px);
       box-shadow: var(--shadow-hover);
+      background-color: #f39c12;
     }
 
     /* Footer mejorado */
     footer {
-      background: linear-gradient(135deg, var(--primary-color), #34495e);
+      background: linear-gradient(135deg, #ffba9b 0%, #dca890 100%);
       color: white;
       padding: 3rem 0 2rem;
     }
